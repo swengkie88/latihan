@@ -1,7 +1,12 @@
-$('#banner').text("Kulo Nuwun Donya!");
+$('#btn-change').click(function(){
+	$('#body').toggleClass("dark-theme");
+	$('.container').toggleClass("dark-theme");
+});
 function tambahkan(){
-	var angka1 = parseInt($('#angka1').val());
-	var angka2 = parseInt($('#angka2').val());
-	var hasil = angka1 + angka2;
-	$('#hasil').text(`Hasil dari ${angka1} + ${angka2} = ${hasil}`);
+	var alas = parseInt($('#alas').val());
+	var tinggi = parseInt($('#tinggi').val());
+	var hasil = (alas * tinggi)/2;
+	$('#hasil').text(`Luas Segitinya ${hasil}`);
+}
+function change(){
 }
